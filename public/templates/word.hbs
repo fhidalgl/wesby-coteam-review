@@ -1,0 +1,23 @@
+<div class="column row">
+<h1>Concordancias para: <strong>{{label}}</strong></h1>
+  <table class="concordance-table">
+      <thead>
+          <tr>
+              <td width="17%">Obra</td>
+              <td width="33.5%"></td>
+              <td width="10%" class="text-center">Concordancia</td>
+              <td width="33.5%"></td>
+          </tr>
+      </thead>
+      <tbody>
+          {{#[@reverse]}}
+            {{#hasWord}}
+                {{!-- concordance --}}
+                <tr onclick="window.document.location='{{this.[@id]}}'">
+                    {{{concordance id=this.[@id] word=@root.label}}}
+                </tr>
+            {{/hasWord}}
+          {{/[@reverse]}}
+      </tbody>
+  </table>
+</div>

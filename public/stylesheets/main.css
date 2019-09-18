@@ -1,0 +1,340 @@
+.concordance-table {
+    table-layout: fixed;
+}
+
+.concordance-table tr {
+    cursor: hand;
+}
+
+.concordance-table .concordance-right {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.concordance-left {
+    direction: rtl;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.concordance-table .concordance-word {
+    white-space: nowrap;
+}
+
+/* From http://stackoverflow.com/a/28074607/2563749 */
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite;
+    animation: ellipsis steps(4,end) 900ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 20px;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 20px;
+    }
+}
+
+.words-list {
+    columns: 6;
+}
+/* --- */
+
+/* Estilo web SEAR */
+
+body {
+    background: #f4f4f4;
+}
+
+body, table {
+    color:#666666
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight:400;
+    font-size:12px;
+    line-height:21px;
+}
+
+a{
+    outline: none;
+    color:#5d5d5d;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 12px;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    line-height: 21px;
+}
+
+a:hover{
+    color:#b83535;
+}
+
+a img{
+    border: none;
+}
+
+a.button {
+    color: #ffffff;;
+}
+
+li a {
+    font-weight: 400;
+}
+
+p {
+    text-align: justify;
+    color: black;
+    margin-bottom: 11px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+dl {
+
+}
+
+dl dd {
+    color: black;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: justify;
+    width: 75%;
+    float: left;
+    padding-left: 15px;
+}
+
+dl dd a {
+    font-weight: 400;
+    color: black;
+}
+
+dl dt {
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: left;
+    float:left;
+    clear: left;
+    width: 25%;
+    color: #b83535;
+}
+
+/*dl dt {*/
+    /*font-weight: 400;*/
+/*}*/
+
+dl dt::after {
+    /*content: ":";*/
+}
+
+h1 {
+    color:#993300;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+}
+
+/*h2 {*/
+    /*font-size: 18px;*/
+    /*line-height: 27px;*/
+/*}*/
+
+h2 {
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    /*text-align: left;*/
+    /*float:left;*/
+    /*clear: left;*/
+    /*width: 25%;*/
+    color: #b83535;
+}
+
+h3 {
+    color:#5d5d5d;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4 {
+    color:#5d5d5d;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h5 {
+    color:#5d5d5d;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+h6 {
+
+    font-size: 10px;
+    line-height: 16px;
+}
+
+button, .button {
+    background-color: #4c4c4c;
+}
+
+.button:hover {
+    background-color: #b83535;
+}
+
+.wrap {
+    background: white;
+}
+
+.wrap, .top-bar, .footer {
+    width: 920px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    height: 100%;
+}
+
+.column {
+    padding: 15px 30px;
+}
+
+.callout {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.callout.large {
+    min-height: 920px;
+}
+
+.footer {
+    background: #4c4c4c;
+    padding: 10px 30px;
+    color: #999999;
+    font-size: 11px;
+    position: relative;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.footer a {
+    /*text-decoration: none;*/
+    color: #b5b5b5;
+    font-weight: normal;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+.pagination .current {
+    background: none;
+    padding: 0;
+}
+
+.pagination .current:hover {
+    background: none;
+}
+
+.pagination .current a {
+    color: #b83535;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pagination a {
+    padding: .1875rem .525rem;
+}
+
+.pagination a:hover {
+    background: none;
+    color: #b83535;
+}
+
+table thead {
+    background: transparent;
+}
+
+thead td {
+    color: #b83535;
+}
+
+tbody td:hover {
+    color: #b83535;
+}
+
+.top-bar {
+    background: white;
+    padding: 0;
+    box-shadow: initial;
+    margin: 0px auto 1px auto;
+    border-bottom: 1px solid #cacaca;
+    text-align: center;
+}
+
+.top-bar a {
+    background: white;
+    color: #666666;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    padding: 13px 19px 13px 20px !important;
+}
+
+.top-bar .active  a {
+    color: #b83535;
+}
+
+.top-bar li {
+    background: white;
+}
+
+.top-bar input {
+    padding: 6px 4px 6px 29px;
+    border: 1px solid #d5d5d5;
+    font-family: "Open Sans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 2px;
+    /*box-shadow: 0px 0px 0px 4px #f4f4f4, inset 0px 1px 1px 0px rgba(0, 0, 0, 0.05);*/
+    height: 31px;
+    width: 250px;
+}
+
+.top-bar li + li:before {
+    content: " | ";
+    padding: 0.6em 0 0;
+    float: left;
+    color: #cacaca;
+}
+
+.search-box {
+    padding-top: 3px;
+}

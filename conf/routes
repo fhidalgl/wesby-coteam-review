@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                    controllers.Application.index
+GET        /welcome             controllers.Application.welcome
+GET        /presentacion        controllers.Application.presentacion
+GET        /descripcion         controllers.Application.descripcion
+
+GET        /words               controllers.Application.words(letter: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)
+
+GET        /search              controllers.Application.search(q, a: Option[String], p: Option[String], tp: Option[String], to: Option[String])
+GET        /wesby-label         controllers.Application.label(uri)
+GET        /context             controllers.Application.context
+
+GET        /*path/              controllers.Application.getLDPC(path, format: Option[String])
+GET        /*path.:extension    controllers.Application.getLDPR(path, extension, page: Option[String])
+GET        /*path               controllers.Application.dereference(path, page: Option[String])

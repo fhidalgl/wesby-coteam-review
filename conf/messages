@@ -1,0 +1,25 @@
+wesby.title=\n\
+ _ _ _         _          ___   ___ \n\
+| | | |___ ___| |_ _ _   |_  | |   |\n\
+| | | | -_|_ -| . | | |  |  _|_| | |\n\
+|_____|___|___|___|_  |  |___|_|___|\n\
+                  |___|             \n\
+                             by WESO
+welcome.test=Welcome to Wesby.
+
+portal.title=Wesby 2.0
+
+search.button=Search
+search.placeholder=Search resources
+search.title=Search results
+
+resource.missingLabel=Unlabeled resource
+resource.table.properties=Property
+resource.table.values=Value
+resource.table.is=Is
+resource.table.of=of
+resource.downloadAs=Download as...
+resource.synonyms=Synonyms
+
+error.serialise=Coudn't serialize the graph.
+error.404=Resource not found
